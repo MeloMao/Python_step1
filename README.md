@@ -3,5 +3,5 @@ my second time to learn Python, not because I haven't really lrarned Python, jus
 ### Markdown test
 This title must be little than the first. 
 ### date notes
-2017/4/24 my first uploaded.
+2017/4/24 my first uploaded./br
 2017/4/27 The 'in door' lesson is over.
