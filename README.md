@@ -6,3 +6,4 @@ This title must be little than the first，by the way, the major Python version 
 2017/04/24 my first uploaded.  
 2017/04/27 The 'in door' lesson is over.  
 2017/05/04 Start 'basic lesson'.
+2017/06/03 Don't need it any more.
