@@ -1,36 +1,11 @@
-#coding=utf-8
-#my first real scraping program.
-import urllib2
-import itertools
-import re
-import urlparse
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
 
-def download(url):
-    print 'Downloading:',url
-    try:
-        html=urllib2.urlopen(url).read()
-    except urllib2.URLError as e:
-        print 'Donwnload error:',e.reason
-        html=None
-    return html
-
-def link_crawler(seed_url,link_regex):
-    crawl_queue=[seed_url]
-    seen=set(crawl_queue)
-    while crawl_queue:
-        url=crawl_queue.pop()
-        html=download(url)
-        for link in get_links(html):
-            if re.match(link_regex,link):
-                link=urlparse.urljoin(seed_url,link)
-                if link not in seen:
-                    seen.add(link)
-                    crawl_queue.append(link)
-
-def get_links(html):
-    webpage_regex=re.compile('<a[^>]+href=["\'](.*?)["\']',re.IGNORECASE)
-    return webpage_regex.findall(html)
-
-seed_url=('http://www.80s.tw/')
-link_regex=('/(mv|movie)')
-link_crawler(seed_url,link_regex)
+for num in range(10, 20):  # 迭代 10 到 20 之间的数字
+    for i in range(2, num):  # 根据因子迭代
+        if num % i == 0:  # 确定第一个因子
+            j = num / i  # 计算第二个因子
+            print '%d 等于 %d * %d' % (num, i, j)
+            break  # 跳出当前循环
+    else:  # 循环的 else 部分
+        print num, '是一个质数'
