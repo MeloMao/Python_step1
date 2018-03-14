@@ -7,7 +7,7 @@ This title must be little than the first，by the way, the major Python version 
 2017/04/27 The 'in door' lesson is over.  
 2017/05/04 Start 'basic lesson'.  
 2017/06/03 Don't need it any more.  
-2017/07/04 I change my mind to use it again.
+2017/07/04 I change my mind to use it again.  
 2018/03/14 I am back!
 
 ## Special
